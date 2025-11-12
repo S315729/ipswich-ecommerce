@@ -1,4 +1,5 @@
 # COMPLETE SCREENSHOT GUIDE FOR DEVOPS ASSESSMENT
+
 **Student ID:** S315729  
 **Project:** Ipswich Retail E-commerce DevOps Implementation  
 **Date:** November 12, 2025
@@ -18,7 +19,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ## **PHASE 1: PLANNING & DESIGN (9 Screenshots)**
 
 ### **Screenshot 01: Architecture Diagram**
+
 **What to create:**
+
 - Open Draw.io (https://app.diagrams.net/)
 - Create a system architecture diagram showing:
   - User Layer (Customers, Admin, Developers)
@@ -36,7 +39,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 02: Homepage Wireframe**
+
 **What to create:**
+
 - Open Draw.io or Figma
 - Design homepage wireframe showing:
   - Header with navigation (Home, Products, Cart, Login)
@@ -51,7 +56,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 03: Product List Wireframe**
+
 **What to create:**
+
 - Design product listing page showing:
   - Left sidebar with category filters
   - Main content area with product grid (3 columns)
@@ -64,7 +71,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 04: Product Detail Wireframe**
+
 **What to create:**
+
 - Design product detail page showing:
   - Large product image on left
   - Product info on right: name, price, stock status, description
@@ -78,7 +87,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 05: Shopping Cart Wireframe**
+
 **What to create:**
+
 - Design shopping cart page showing:
   - List of cart items with: thumbnail, name, quantity selector, price, remove button
   - Cart summary on right: subtotal, tax, total
@@ -90,7 +101,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 06: Team Composition Diagram**
+
 **What to create:**
+
 - Create organizational chart showing:
   - Product Owner (top)
   - Scrum Master (middle)
@@ -103,7 +116,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 07: Trello Board Overview** (Optional but recommended)
+
 **What to do:**
+
 - Go to https://trello.com/ and create account
 - Create board: "Ipswich Retail DevOps"
 - Create lists: Backlog, To Do, In Progress, Code Review, Testing, Done
@@ -115,7 +130,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 08: Trello Cards** (Optional)
+
 **What to do:**
+
 - Show cards in different columns with labels and assignments
 
 **Caption for Word Document:**
@@ -124,7 +141,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 09: Trello Card Detail** (Optional)
+
 **What to do:**
+
 - Open one card to show: checklist, due date, assignee, comments
 
 **Caption for Word Document:**
@@ -135,7 +154,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ## **PHASE 2: ENVIRONMENT SETUP (4 Screenshots)**
 
 ### **Screenshot 10: Git Configuration**
+
 **What to do:**
+
 1. Open PowerShell in `C:\Users\Administrator\Downloads\DevOps`
 2. Run these commands:
    ```powershell
@@ -151,7 +172,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 11: Virtual Environment Active**
+
 **What to do:**
+
 1. Look at PowerShell terminal
 2. Ensure you see `(.venv)` at the beginning of the prompt
 3. Take screenshot showing: `(.venv) PS C:\Users\Administrator\Downloads\DevOps>`
@@ -162,7 +185,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 12: Requirements.txt File**
+
 **What to do:**
+
 1. In VS Code, open file: `requirements.txt`
 2. Ensure it shows all dependencies:
    - Django==4.2
@@ -178,7 +203,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 13: Project Structure in VS Code**
+
 **What to do:**
+
 1. In VS Code Explorer (left sidebar), expand folders:
    - ipswich_ecommerce
    - products
@@ -196,7 +223,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ## **PHASE 3: DJANGO APPLICATION (10 Screenshots)**
 
 ### **Screenshot 14: Django Development Server Running**
+
 **What to do:**
+
 1. Open PowerShell terminal
 2. Should show output:
    ```
@@ -214,7 +243,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 15: Homepage**
+
 **What to do:**
+
 1. Open browser: http://127.0.0.1:8000/
 2. Homepage should show:
    - Navigation bar (Home, Products, Cart)
@@ -229,7 +260,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 16: Products Page**
+
 **What to do:**
+
 1. Click "Products" in navigation
 2. Page should show:
    - Category sidebar (All Products, Electronics, Clothing, Books, Home & Garden)
@@ -243,7 +276,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 17: Product Detail Page**
+
 **What to do:**
+
 1. Click on any product (e.g., "Laptop" or "Wireless Headphones")
 2. Page should show:
    - Product image
@@ -259,7 +294,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 18: Shopping Cart**
+
 **What to do:**
+
 1. Add 2-3 products to cart (click "Add to Cart" button)
 2. Click "Cart" in navigation
 3. Cart should show:
@@ -276,7 +313,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 19: Admin Login Page**
+
 **What to do:**
+
 1. Go to: http://127.0.0.1:8000/admin/
 2. Shows Django admin login form
 3. Take screenshot
@@ -287,7 +326,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 20: Admin Dashboard**
+
 **What to do:**
+
 1. Login with:
    - Username: `admin`
    - Password: `admin123`
@@ -303,7 +344,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 21: Admin - Products List**
+
 **What to do:**
+
 1. Click "Products" in admin
 2. Shows table of all products with:
    - Name, Category, Price, Stock, Available status
@@ -316,7 +359,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 22: Products Models.py Code**
+
 **What to do:**
+
 1. Open file: `products/models.py` in VS Code
 2. Show the `Category` and `Product` model definitions
 3. Highlight the fields: name, slug, price, stock, image, etc.
@@ -328,7 +373,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 23: Cart Models.py Code**
+
 **What to do:**
+
 1. Open file: `cart/models.py` in VS Code
 2. Show `Cart` and `CartItem` models
 3. Highlight the methods like `get_total_price()`
@@ -342,13 +389,15 @@ This document provides EXACT instructions for every screenshot you need to take 
 ## **PHASE 4: VERSION CONTROL (8 Screenshots)**
 
 ### **Screenshot 24: .gitignore File**
+
 **What to do:**
+
 1. Open `.gitignore` file in VS Code
 2. Should show:
-   - __pycache__/
-   - *.pyc
+   - **pycache**/
+   - \*.pyc
    - .venv/
-   - *.log
+   - \*.log
    - .env
    - staticfiles/
 3. Take screenshot
@@ -359,7 +408,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 25: Git Status Before Commit**
+
 **What to do:**
+
 1. In PowerShell, run: `git status`
 2. Shows untracked files in red
 3. Take screenshot
@@ -370,7 +421,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 26: Git Add Command**
+
 **What to do:**
+
 1. Run: `git add .`
 2. Run: `git status` again
 3. Shows files staged for commit in green
@@ -382,8 +435,11 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 27: Initial Commit**
+
 **What to do:**
+
 1. Run commit command:
+
    ```powershell
    git commit -m "Initial commit: Django e-commerce with MVT architecture
 
@@ -395,6 +451,7 @@ This document provides EXACT instructions for every screenshot you need to take 
    - Configured admin panel
    - Added sample data with 16 products"
    ```
+
 2. Shows commit summary with files changed
 3. Take screenshot
 
@@ -404,7 +461,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 28: GitHub - Create Repository**
+
 **What to do:**
+
 1. Go to: https://github.com/ (logged in as S315729)
 2. Click "New repository" (green button)
 3. Fill in:
@@ -420,7 +479,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 29: Git Push to GitHub**
+
 **What to do:**
+
 1. After creating repo, run these commands:
    ```powershell
    git remote add origin https://github.com/S315729/ipswich-ecommerce.git
@@ -436,7 +497,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 30: GitHub Repository View**
+
 **What to do:**
+
 1. Refresh GitHub page
 2. Shows all project files in the repository
 3. Shows README.md, folders (products, cart, orders, templates), files
@@ -448,7 +511,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 31: GitHub Commit History**
+
 **What to do:**
+
 1. Click on "commits" link in GitHub (shows "1 commit")
 2. Shows commit history with messages, author (S315729), timestamps
 3. Take screenshot
@@ -461,7 +526,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ## **PHASE 5: TESTING (6 Screenshots)**
 
 ### **Screenshot 32: tests.py File Code**
+
 **What to do:**
+
 1. Open `tests.py` file in VS Code
 2. Show test classes:
    - ProductModelTest
@@ -476,7 +543,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 33: Running Tests Command**
+
 **What to do:**
+
 1. In PowerShell, run:
    ```powershell
    python manage.py test --verbosity=2
@@ -490,7 +559,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 34: All Tests Passing**
+
 **What to do:**
+
 1. Scroll to bottom of test output
 2. Should show:
    ```
@@ -506,7 +577,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 35: Coverage Run Command**
+
 **What to do:**
+
 1. Run: `pip install coverage` (if not installed)
 2. Run: `coverage run --source='.' manage.py test`
 3. Shows tests running
@@ -518,7 +591,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 36: Coverage Report**
+
 **What to do:**
+
 1. Run: `coverage report`
 2. Shows table with:
    - File names
@@ -533,7 +608,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 37: Coverage HTML Report** (Optional)
+
 **What to do:**
+
 1. Run: `coverage html`
 2. Open: `htmlcov/index.html` in browser
 3. Shows visual coverage report with highlighted code
@@ -547,7 +624,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ## **PHASE 6: CI/CD PIPELINE (8 Screenshots)**
 
 ### **Screenshot 38: GitHub Actions Workflow File**
+
 **What to do:**
+
 1. Create folder: `.github/workflows/`
 2. Open file: `.github/workflows/django-ci-cd.yml` in VS Code
 3. Show the workflow configuration with jobs:
@@ -563,7 +642,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 39: Workflow Jobs Configuration**
+
 **What to do:**
+
 1. Scroll through the workflow file
 2. Show each job definition:
    - Test job: runs Django tests
@@ -578,7 +659,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 40: Git Commit for CI/CD**
+
 **What to do:**
+
 1. After creating workflow file, run:
    ```powershell
    git add .github/
@@ -593,7 +676,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 41: GitHub Actions Tab**
+
 **What to do:**
+
 1. Go to GitHub repository
 2. Click "Actions" tab
 3. Shows workflow runs list
@@ -605,7 +690,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 42: Workflow Running**
+
 **What to do:**
+
 1. Click on the most recent workflow run
 2. Shows jobs in progress with yellow/orange icons
 3. Take screenshot while it's running
@@ -616,7 +703,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 43: All Jobs Passed**
+
 **What to do:**
+
 1. Wait for workflow to complete
 2. All jobs show green checkmarks (✓)
 3. Take screenshot
@@ -627,7 +716,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 44: Test Job Logs**
+
 **What to do:**
+
 1. Click on "test" job
 2. Shows detailed logs of test execution
 3. Shows "Ran X tests" and "OK"
@@ -639,7 +730,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 45: README with Build Badge** (Optional)
+
 **What to do:**
+
 1. Add badge to README.md:
    ```markdown
    ![CI/CD Pipeline](https://github.com/S315729/ipswich-ecommerce/actions/workflows/django-ci-cd.yml/badge.svg)
@@ -655,7 +748,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ## **PHASE 7: CONTAINERIZATION (5 Screenshots)**
 
 ### **Screenshot 46: Dockerfile**
+
 **What to do:**
+
 1. Open `Dockerfile` in VS Code
 2. Show configuration:
    - FROM python:3.13-slim
@@ -672,7 +767,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 47: docker-compose.yml**
+
 **What to do:**
+
 1. Open `docker-compose.yml` in VS Code
 2. Show services:
    - web: Django app
@@ -686,7 +783,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 48: Docker Build Command** (if Docker installed)
+
 **What to do:**
+
 1. Run: `docker build -t ipswich-ecommerce .`
 2. Shows build steps being executed
 3. Take screenshot of build process
@@ -697,7 +796,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 49: Docker Build Complete** (if Docker installed)
+
 **What to do:**
+
 1. Shows "Successfully built" message
 2. Shows image ID
 3. Take screenshot
@@ -708,7 +809,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 50: Docker Images List** (if Docker installed)
+
 **What to do:**
+
 1. Run: `docker images`
 2. Shows ipswich-ecommerce image with size and date
 3. Take screenshot
@@ -721,7 +824,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ## **PHASE 8: DEPLOYMENT TO PYTHONANYWHERE (15 Screenshots)**
 
 ### **Screenshot 51: PythonAnywhere Dashboard**
+
 **What to do:**
+
 1. Go to: https://www.pythonanywhere.com/
 2. Sign up for free account
 3. Take screenshot of dashboard after login
@@ -732,7 +837,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 52: Bash Console**
+
 **What to do:**
+
 1. Click "Consoles" tab
 2. Start a Bash console
 3. Shows bash prompt
@@ -744,7 +851,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 53: Git Clone on Server**
+
 **What to do:**
+
 1. In bash console, run:
    ```bash
    git clone https://github.com/S315729/ipswich-ecommerce.git
@@ -758,7 +867,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 54: Creating Virtual Environment**
+
 **What to do:**
+
 1. Run:
    ```bash
    mkvirtualenv --python=/usr/bin/python3.10 ipswich-env
@@ -772,7 +883,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 55: Installing Requirements**
+
 **What to do:**
+
 1. Run:
    ```bash
    cd ipswich-ecommerce
@@ -787,7 +900,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 56: Running Migrations**
+
 **What to do:**
+
 1. Run:
    ```bash
    python manage.py migrate
@@ -802,7 +917,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 57: Creating Superuser**
+
 **What to do:**
+
 1. Run:
    ```bash
    python manage.py createsuperuser
@@ -817,7 +934,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 58: Collecting Static Files**
+
 **What to do:**
+
 1. Run:
    ```bash
    python manage.py collectstatic --noinput
@@ -831,7 +950,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 59: Web App Configuration Page**
+
 **What to do:**
+
 1. Click "Web" tab
 2. Click "Add a new web app"
 3. Select "Manual configuration"
@@ -844,7 +965,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 60: WSGI Configuration**
+
 **What to do:**
+
 1. Click on WSGI configuration file link
 2. Edit to point to Django app
 3. Show the configuration code
@@ -856,7 +979,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 61: Virtual Environment Path**
+
 **What to do:**
+
 1. In Web tab, find "Virtualenv" section
 2. Enter path: `/home/username/.virtualenvs/ipswich-env`
 3. Take screenshot
@@ -867,7 +992,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 62: Static Files Configuration**
+
 **What to do:**
+
 1. In Web tab, find "Static files" section
 2. Add mappings:
    - URL: /static/ → Directory: /path/to/staticfiles/
@@ -880,7 +1007,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 63: Reload Web App**
+
 **What to do:**
+
 1. Click green "Reload" button
 2. Shows reload confirmation
 3. Take screenshot
@@ -891,7 +1020,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 64: Live Homepage**
+
 **What to do:**
+
 1. Visit: https://yourusername.pythonanywhere.com/
 2. Shows live homepage
 3. Take screenshot
@@ -902,7 +1033,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 65: Live Products Page**
+
 **What to do:**
+
 1. Click "Products" on live site
 2. Shows products with images
 3. Take screenshot
@@ -913,7 +1046,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 66: Live Shopping Cart**
+
 **What to do:**
+
 1. Add product to cart on live site
 2. View cart
 3. Take screenshot
@@ -924,7 +1059,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 67: Live Admin Panel**
+
 **What to do:**
+
 1. Go to: https://yourusername.pythonanywhere.com/admin/
 2. Login
 3. Shows admin dashboard
@@ -938,7 +1075,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ## **PHASE 9: MONITORING (3 Screenshots)**
 
 ### **Screenshot 68: GitHub Issues Page**
+
 **What to do:**
+
 1. Go to GitHub repository
 2. Click "Issues" tab
 3. Take screenshot
@@ -949,7 +1088,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 69: Creating Sample Issue**
+
 **What to do:**
+
 1. Click "New issue"
 2. Create issue: "Monitor application performance"
 3. Add description and labels
@@ -961,7 +1102,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 70: Django Logging Configuration**
+
 **What to do:**
+
 1. Open `settings.py` in VS Code
 2. Scroll to LOGGING configuration (if exists)
 3. Show logging setup
@@ -975,7 +1118,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ## **PHASE 10: FINAL DOCUMENTATION (2 Screenshots)**
 
 ### **Screenshot 71: Complete README.md**
+
 **What to do:**
+
 1. Open README.md in VS Code
 2. Show complete documentation with sections:
    - Project overview
@@ -993,7 +1138,9 @@ This document provides EXACT instructions for every screenshot you need to take 
 ---
 
 ### **Screenshot 72: Final Project Structure**
+
 **What to do:**
+
 1. In VS Code Explorer, expand all folders
 2. Show complete project with:
    - All apps
@@ -1013,6 +1160,7 @@ This document provides EXACT instructions for every screenshot you need to take 
 Use this checklist to track your progress:
 
 **Planning (9):**
+
 - [ ] 01 - Architecture Diagram
 - [ ] 02 - Homepage Wireframe
 - [ ] 03 - Product List Wireframe
@@ -1024,12 +1172,14 @@ Use this checklist to track your progress:
 - [ ] 09 - Trello Detail
 
 **Environment (4):**
+
 - [ ] 10 - Git Config
 - [ ] 11 - Virtual Environment
 - [ ] 12 - Requirements.txt
 - [ ] 13 - Project Structure
 
 **Django App (10):**
+
 - [ ] 14 - Server Running
 - [ ] 15 - Homepage
 - [ ] 16 - Products Page
@@ -1042,6 +1192,7 @@ Use this checklist to track your progress:
 - [ ] 23 - Cart Models Code
 
 **Version Control (8):**
+
 - [ ] 24 - .gitignore
 - [ ] 25 - Git Status
 - [ ] 26 - Git Add
@@ -1052,6 +1203,7 @@ Use this checklist to track your progress:
 - [ ] 31 - Commit History
 
 **Testing (6):**
+
 - [ ] 32 - tests.py Code
 - [ ] 33 - Running Tests
 - [ ] 34 - Tests Passing
@@ -1060,6 +1212,7 @@ Use this checklist to track your progress:
 - [ ] 37 - Coverage HTML
 
 **CI/CD (8):**
+
 - [ ] 38 - Workflow File
 - [ ] 39 - Workflow Jobs
 - [ ] 40 - Commit CI/CD
@@ -1070,6 +1223,7 @@ Use this checklist to track your progress:
 - [ ] 45 - Build Badge
 
 **Docker (5):**
+
 - [ ] 46 - Dockerfile
 - [ ] 47 - docker-compose.yml
 - [ ] 48 - Docker Build
@@ -1077,6 +1231,7 @@ Use this checklist to track your progress:
 - [ ] 50 - Docker Images
 
 **Deployment (15):**
+
 - [ ] 51 - PythonAnywhere Dashboard
 - [ ] 52 - Bash Console
 - [ ] 53 - Git Clone
@@ -1096,11 +1251,13 @@ Use this checklist to track your progress:
 - [ ] 67 - Live Admin
 
 **Monitoring (3):**
+
 - [ ] 68 - GitHub Issues
 - [ ] 69 - Sample Issue
 - [ ] 70 - Logging Config
 
 **Documentation (2):**
+
 - [ ] 71 - README
 - [ ] 72 - Final Structure
 
@@ -1124,11 +1281,9 @@ For each screenshot in your report:
 
 1. **Insert the image:**
    - In Word: Insert → Pictures → Select screenshot
-   
 2. **Add caption below image:**
    - Right-click image → Insert Caption
    - Use the caption text provided above
-   
 3. **Reference in text:**
    - "As shown in Figure 15, the homepage displays..."
    - "The architecture diagram (Figure 1) illustrates..."

@@ -1,0 +1,323 @@
+COMPONENT 2 - SCREENSHOT CAPTURE GUIDE
+======================================
+
+This guide provides step-by-step instructions for capturing all required screenshots
+for your Component 2 DevOps assignment submission.
+
+FOLDER STRUCTURE:
+Assessment 2/
+  ├── screenshots/           (All screenshots go here)
+  ├── ipswich_ecommerce/     (Django project code)
+  ├── Component2_Implementation_Plan.txt
+  ├── Component2_Report.docx (Your 3,000-word report)
+  └── SCREENSHOT_GUIDE.txt   (This file)
+
+NAMING CONVENTION:
+Format: [number]_[category]_[description].png
+Example: 01_planning_architecture_diagram.png
+
+==================
+REQUIRED SCREENSHOTS (40+)
+==================
+
+PLANNING PHASE (5 screenshots)
+------------------------------
+01_planning_architecture_diagram.png
+   - Take screenshot of Draw.io diagram showing Django, PostgreSQL, Docker, GitHub Actions, PythonAnywhere
+
+02_planning_wireframes_homepage.png
+   - Screenshot of homepage wireframe/mockup from Figma
+
+03_planning_wireframes_products.png
+   - Screenshot of products page wireframe
+
+04_planning_team_composition.png
+   - Screenshot of team roles diagram (even if solo, show your roles)
+
+05_planning_trello_board.png (optional)
+   - Screenshot of Trello board with tasks
+
+
+ENVIRONMENT SETUP (3 screenshots)
+----------------------------------
+06_setup_git_config.png
+   PowerShell command: git config --list | Select-String "user"
+   Shows: user.name=S315729, user.email
+
+07_setup_python_version.png
+   PowerShell command: python --version
+   Shows: Python 3.13.9
+
+08_setup_virtual_environment.png
+   PowerShell command: pip list
+   Shows: Installed packages in virtual environment
+
+
+PROJECT STRUCTURE (5 screenshots)
+----------------------------------
+09_structure_project_tree.png
+   PowerShell command: tree /F /A
+   Shows: Complete project folder structure
+
+10_structure_apps_overview.png
+   Screenshot: VS Code explorer showing products/, cart/, orders/ apps
+
+11_structure_models.png
+   Screenshot: Open products/models.py, cart/models.py, orders/models.py in VS Code
+
+12_structure_templates.png
+   Screenshot: VS Code showing templates folder with all HTML files
+
+13_structure_static_files.png
+   Screenshot: VS Code showing static/ folder structure
+
+
+DJANGO APPLICATION (8 screenshots)
+-----------------------------------
+14_django_homepage.png
+   Browser: http://127.0.0.1:8000/
+   Shows: Homepage with featured products
+
+15_django_product_list.png
+   Browser: http://127.0.0.1:8000/products/
+   Shows: Product listing with categories
+
+16_django_product_detail.png
+   Browser: Click on a product
+   Shows: Product detail page with Add to Cart button
+
+17_django_cart.png
+   Browser: http://127.0.0.1:8000/cart/
+   Shows: Shopping cart with items
+
+18_django_create_order.png
+   Browser: http://127.0.0.1:8000/orders/create/
+   Shows: Order creation form
+
+19_django_admin_login.png
+   Browser: http://127.0.0.1:8000/admin/
+   Shows: Django admin login page
+
+20_django_admin_products.png
+   Browser: Admin panel - Products section
+   Shows: Product management interface
+
+21_django_admin_orders.png
+   Browser: Admin panel - Orders section
+   Shows: Order management interface
+
+
+VERSION CONTROL (6 screenshots)
+--------------------------------
+22_git_init.png
+   PowerShell command: git status
+   Shows: Initialized git repository
+
+23_git_initial_commit.png
+   PowerShell command: git log --oneline
+   Shows: Initial commit message
+
+24_github_repo_created.png
+   Browser: GitHub.com showing newly created repository S315729/ipswich-ecommerce
+
+25_github_code_pushed.png
+   Browser: GitHub repository showing all files pushed
+
+26_github_commits.png
+   Browser: GitHub commits page showing commit history
+
+27_git_branches.png
+   PowerShell command: git branch -a
+   Shows: Branch structure (main, develop if applicable)
+
+
+TESTING (4 screenshots)
+------------------------
+28_tests_running.png
+   PowerShell command: python manage.py test --verbosity=2
+   Shows: All 18 tests passing
+
+29_tests_coverage_report.png
+   PowerShell command: coverage report
+   Shows: Test coverage percentages
+
+30_tests_coverage_html.png
+   Browser: Open htmlcov/index.html
+   Shows: Detailed coverage report
+
+31_tests_code.png
+   Screenshot: VS Code showing tests.py file with test cases
+
+
+CI/CD PIPELINE (5 screenshots)
+-------------------------------
+32_cicd_workflow_file.png
+   Screenshot: VS Code showing .github/workflows/django-ci-cd.yml
+
+33_cicd_github_actions_tab.png
+   Browser: GitHub Actions tab showing workflows
+
+34_cicd_workflow_running.png
+   Browser: GitHub Actions showing pipeline running (yellow indicator)
+
+35_cicd_workflow_success.png
+   Browser: GitHub Actions showing all checks passed (green checkmarks)
+
+36_cicd_workflow_details.png
+   Browser: Click on workflow run to show job details (test, lint, build)
+
+
+DOCKER (4 screenshots)
+-----------------------
+37_docker_dockerfile.png
+   Screenshot: VS Code showing Dockerfile contents
+
+38_docker_compose_file.png
+   Screenshot: VS Code showing docker-compose.yml
+
+39_docker_image_built.png (if Docker installed locally)
+   PowerShell command: docker images
+   Shows: ipswich-ecommerce image listed
+
+40_docker_container_running.png (if Docker installed locally)
+   PowerShell command: docker ps
+   Shows: Running container
+
+
+DEPLOYMENT (5+ screenshots)
+----------------------------
+41_deployment_pythonanywhere_signup.png
+   Browser: PythonAnywhere dashboard after signup
+
+42_deployment_files_uploaded.png
+   Browser: PythonAnywhere Files tab showing uploaded project
+
+43_deployment_console.png
+   Browser: PythonAnywhere Bash console showing setup commands
+
+44_deployment_web_app_config.png
+   Browser: PythonAnywhere Web tab showing WSGI configuration
+
+45_deployment_live_site.png
+   Browser: Your live site at [yourusername].pythonanywhere.com
+
+46_deployment_static_files.png
+   Browser: Live site with properly loaded CSS/images
+
+
+MONITORING & DOCUMENTATION (3 screenshots)
+-------------------------------------------
+47_monitoring_github_issues.png
+   Browser: GitHub Issues tab with sample issues created
+
+48_documentation_readme.png
+   Browser: GitHub showing rendered README.md
+
+49_documentation_deployment_guide.png
+   Browser: GitHub showing DEPLOYMENT_GUIDE.md
+
+
+==================
+SCREENSHOT CAPTURE TIPS
+==================
+
+1. WINDOWS SNIPPING TOOL:
+   - Press: Windows + Shift + S
+   - Select area to capture
+   - Image copied to clipboard
+   - Open Paint or Paint 3D to save
+   - Save as PNG in "Assessment 2\screenshots\" folder
+
+2. BROWSER SCREENSHOTS:
+   - Press F12 to open DevTools
+   - Press Ctrl + Shift + P
+   - Type "Capture full size screenshot"
+   - Image saves to Downloads folder
+   - Move to screenshots folder
+
+3. POWERSHELL SCREENSHOTS:
+   - Make PowerShell window large enough to show full output
+   - Use Windows + Shift + S to capture
+   - Include command and full output in capture
+
+4. VS CODE SCREENSHOTS:
+   - Open relevant file
+   - Zoom to readable font size (Ctrl + Plus)
+   - Capture with Windows + Shift + S
+   - Include VS Code UI for context
+
+==================
+CAPTION TEMPLATE FOR REPORT
+==================
+
+When inserting screenshots in your report, use captions like:
+
+"Figure 1: System Architecture Diagram showing Django application components, database, Docker containerization, CI/CD pipeline with GitHub Actions, and deployment to PythonAnywhere."
+
+"Figure 2: Homepage wireframe created in Figma, demonstrating responsive design principles with navigation bar, featured products carousel, and footer sections."
+
+"Figure 3: Django Admin Panel showing product management interface with ability to add, edit, and delete products. Admin authentication ensures only authorized users can access this functionality."
+
+"Figure 4: GitHub Actions CI/CD pipeline successfully running automated tests, code linting, and Docker image build. Green checkmarks indicate all jobs passed without errors."
+
+"Figure 5: Live deployed application on PythonAnywhere at [yourusername].pythonanywhere.com showing fully functional e-commerce platform accessible via public URL."
+
+==================
+VERIFICATION CHECKLIST
+==================
+
+Before submission, verify you have:
+☐ At least 40 screenshots total
+☐ All screenshots in PNG format
+☐ All screenshots properly named with numbering
+☐ Screenshots are clear and readable (not blurry)
+☐ Text in screenshots is large enough to read
+☐ Each screenshot shows relevant content (no empty screens)
+☐ Browser screenshots include URL bar when relevant
+☐ Terminal screenshots show both command and output
+☐ All screenshots referenced in your report with figure numbers
+☐ All screenshots have descriptive captions in report
+
+==================
+NEXT STEPS
+==================
+
+1. Start with planning screenshots (01-05):
+   - Create architecture diagram in Draw.io
+   - Create wireframes in Figma
+   - Capture screenshots
+
+2. Capture environment setup screenshots (06-08):
+   - Run git config commands
+   - Run python version command
+   - Run pip list command
+
+3. Capture project structure screenshots (09-13):
+   - Run tree command
+   - Open VS Code to show folder structure
+   - Open model files
+
+4. Continue through remaining categories systematically
+
+5. Organize all screenshots in "Assessment 2\screenshots\" folder
+
+6. Reference each screenshot in your report with figure numbers
+
+7. Include captions for each screenshot explaining what it shows
+
+==================
+TIME ESTIMATE
+==================
+
+- Planning diagrams creation: 1-2 hours
+- Screenshot capture (40+ screenshots): 1-2 hours
+- Screenshot organization and labeling: 30 minutes
+- Adding screenshots to report with captions: 1 hour
+
+Total: 3.5-5.5 hours
+
+Start early! You need these screenshots before you can complete your report.
+
+==================
+END OF GUIDE
+==================

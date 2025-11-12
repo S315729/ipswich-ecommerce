@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}Order #{{ order.id }} - Ipswich Retail{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="alert alert-success text-center">
+        <h3><i class="bi bi-check-circle"></i> Order Placed Successfully!</h3>
+        <p>Your order #{{ order.id }} has been received and is being processed.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Order Details</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Shipping Information</h6>
+                    <p><strong>{{ order.first_name }} {{ order.last_name }}</strong><br>
+                    {{ order.address }}<br>
+                    {{ order.city }}, {{ order.postal_code }}<br>
+                    {{ order.country }}<br>
+                    Phone: {{ order.phone }}<br>
+                    Email: {{ order.email }}</p>
+                </div>
+                <div class="col-md-6">
+                    <h6>Order Information</h6>
+                    <p><strong>Order ID:</strong> #{{ order.id }}<br>
+                    <strong>Date:</strong> {{ order.created_at|date:"F d, Y H:i" }}<br>
+                    <strong>Status:</strong> <span class="badge bg-info">{{ order.get_status_display }}</span><br>
+                    <strong>Total:</strong> <span class="text-primary">${{ order.total_amount }}</span></p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h6>Order Items</h6>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in order.items.all %}
+                    <tr>
+                        <td>{{ item.product.name }}</td>
+                        <td>${{ item.price }}</td>
+                        <td>{{ item.quantity }}</td>
+                        <td>${{ item.get_total_price }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3" class="text-end">Total:</th>
+                        <th>${{ order.total_amount }}</th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div class="d-flex gap-2 mt-4">
+                <a href="{% url 'products:product_list' %}" class="btn btn-primary">
+                    <i class="bi bi-shop"></i> Continue Shopping
+                </a>
+                <a href="{% url 'orders:order_list' %}" class="btn btn-outline-primary">
+                    <i class="bi bi-list"></i> View All Orders
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

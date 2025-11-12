@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django
+*.log
+local_settings.py
+# db.sqlite3  # Included for PoC demo with sample data
+db.sqlite3-journal
+# /media  # Included for PoC demo with product images
+/staticfiles
+/static
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Temporary files
+~$*.docx
+~WRL*.tmp
+*.tmp
+
+# Exclude other demo projects (not part of this assessment)
+/CICD/
+/deployment-demo/
+/devops-cicd-demo/
+/devops-lab1/
+/Docker/
+
+# Exclude assignment briefs (confidential)
+*.pdf
+*.docx
+
+# Exclude other scripts not part of main project
+/pdf_to_md.py
+COMPLETE_STATUS.txt
+Component1_Simple_Steps.txt
+Component2_Implementation_Plan.txt
+DevOps_Component_1.md
+DevOps_Component_2.md
+DEPLOYMENT_GUIDE.md

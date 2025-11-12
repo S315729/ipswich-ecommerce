@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome to Ipswich Retail{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <!-- Hero Section -->
+    <div class="jumbotron bg-primary text-white rounded p-5 mb-5">
+        <h1 class="display-4">Welcome to Ipswich Retail</h1>
+        <p class="lead">Your one-stop shop for Electronics, Clothing, Books, and Home & Garden products.</p>
+        <hr class="my-4 bg-white">
+        <p>Modern e-commerce built with Django and DevOps best practices.</p>
+        <a class="btn btn-light btn-lg" href="{% url 'products:product_list' %}" role="button">
+            <i class="bi bi-shop"></i> Start Shopping
+        </a>
+    </div>
+
+    <!-- Categories -->
+    <h2 class="mb-4">Shop by Category</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4 mb-5">
+        {% for category in categories %}
+        <div class="col">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <i class="bi bi-tag-fill text-primary" style="font-size: 3rem;"></i>
+                    <h5 class="card-title mt-3">{{ category.name }}</h5>
+                    <p class="card-text text-muted">{{ category.description|truncatewords:10 }}</p>
+                    <a href="{% url 'products:product_list' %}?category={{ category.slug }}" class="btn btn-outline-primary">
+                        Browse <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Featured Products -->
+    <h2 class="mb-4">Featured Products</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        {% for product in featured_products %}
+        <div class="col">
+            <div class="card product-card">
+                {% if product.image %}
+                <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}" style="height: 200px; object-fit: cover;">
+                {% else %}
+                <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">
+                    <i class="bi bi-image" style="font-size: 3rem;"></i>
+                </div>
+                {% endif %}
+                <div class="card-body">
+                    <span class="badge bg-primary mb-2">{{ product.category.name }}</span>
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text text-muted">{{ product.description|truncatewords:10 }}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="text-primary mb-0">${{ product.price }}</h4>
+                        <a href="{% url 'products:product_detail' product.slug %}" class="btn btn-primary btn-sm">
+                            View
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Features -->
+    <div class="row mt-5 pt-5 border-top">
+        <div class="col-md-3 text-center mb-4">
+            <i class="bi bi-truck text-primary" style="font-size: 3rem;"></i>
+            <h5 class="mt-3">Fast Delivery</h5>
+            <p class="text-muted">Quick shipping on all orders</p>
+        </div>
+        <div class="col-md-3 text-center mb-4">
+            <i class="bi bi-shield-check text-primary" style="font-size: 3rem;"></i>
+            <h5 class="mt-3">Secure Payment</h5>
+            <p class="text-muted">100% secure transactions</p>
+        </div>
+        <div class="col-md-3 text-center mb-4">
+            <i class="bi bi-arrow-clockwise text-primary" style="font-size: 3rem;"></i>
+            <h5 class="mt-3">Easy Returns</h5>
+            <p class="text-muted">30-day return policy</p>
+        </div>
+        <div class="col-md-3 text-center mb-4">
+            <i class="bi bi-headset text-primary" style="font-size: 3rem;"></i>
+            <h5 class="mt-3">24/7 Support</h5>
+            <p class="text-muted">Always here to help</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
